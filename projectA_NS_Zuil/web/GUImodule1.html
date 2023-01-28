@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Zuil</title>
+    </head>
+
+    <body>
+        <h1>Welkom bij de stationszuil, voer a.u.b. uw commentaar in.</h1>
+        <form id="messageForm">
+            Bericht (max 140 karakters): <input id="messageTxt" maxlength="140"> <br />
+            Naam: <input id="nameTxt"> <br />
+            Station:
+            <select name="station" id="stationSel"></select> <br />
+            <input type="submit" value="Plaats bericht">
+        </form>
+        <div id="statusMessage" hidden>
+            Verzendstatus: <span id="submitStatus"></span>
+        </div>
+    </body>
+
+    <script type="text/javascript" src ="/eel.js"> </script> <!--Roept javascript op middels eel bibliotheek, "eel.js" zit in eel.-->
+    <script src="GUImodule1.js"> </script> <!-- Kan eigen script runnen middels javascript -->
+
+</html>

@@ -1,8 +1,0 @@
-Almelo,False,True,False,True
-Alkmaar,True,False,True,False
-Deventer,True,False,True,False
-Den Haag,True,False,True,False
-Hoorn,True,False,True,False
-Hilversum,False,True,False,True
-Vlissingen,True,False,True,False
-Zwolle,True,False,True,False

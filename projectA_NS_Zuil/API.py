@@ -1,7 +1,25 @@
 #api ophalen
 import random
 import requests
+import psycopg2
 import json
+
+conn = psycopg2.connect(database="ns_projecta", user="postgres", password="mydb123", host="127.0.0.1", port="5432")
+cur = conn.cursor()
+
+
+def station_locatie():
+    ''' achter haalt de stations waarop een bericht is geschreven die in de database zijn gezet'''
+    cur.execute("SELECT DISTINCT station "
+                "FROM messages ")
+
+    conn.commit()
+    return cur.fetchall()
+
+print(station_locatie())
+x_first = (station_locatie())
+x = x_first.split
+print(x)
 
 api_key= "86a37d514f009078a9c38d03dbb15cb9"
 def station_name():
