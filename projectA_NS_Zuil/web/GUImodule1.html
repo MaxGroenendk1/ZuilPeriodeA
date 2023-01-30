@@ -4,16 +4,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Zuil</title>
+        <link rel="stylesheet" href="GUImodule1.css">
     </head>
 
     <body>
-        <h1>Welkom bij de stationszuil, voer a.u.b. uw commentaar in.</h1>
+    <header id="site-header" class="header-group" role="banner">
+        <div class="header-inner section-inner">
+            <img src="/img_logoNS.png" width="60" height="120" alt="NS_logo">
+        </div>
+    </header>
+        <h1>Welkom bij de stationszuil!</h1>
         <form id="messageForm">
-            Bericht (max 140 karakters): <input id="messageTxt" maxlength="140"> <br />
+            Bericht (max 140 karakters): <textarea id="messageTxt" name="messageTxt" rows="4" cols="50" maxlength="140" placeholder="Deel een bericht met uw medereizigers door heel Nederland"></textarea><br />
             Naam: <input id="nameTxt"> <br />
             Station:
             <select name="station" id="stationSel"></select> <br />
-            <input type="submit" value="Plaats bericht">
+            <input type="submit" value="Plaats bericht" class="btn">
         </form>
         <div id="statusMessage" hidden>
             Verzendstatus: <span id="submitStatus"></span>

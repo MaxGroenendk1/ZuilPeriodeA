@@ -2,7 +2,7 @@ import datetime
 import random
 import csv
 import eel
-
+from PIL import Image
 
 def get_now():
     ''' Deze functie bepaald de huidige tijd middels een bibliotheek, en rond vervolgens de overige decimalen af.'''

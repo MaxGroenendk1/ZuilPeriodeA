@@ -1,0 +1,25 @@
+body {
+    background: #FFD83D;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+p {
+    font-family:sans-serif;
+}
+
+input, label {
+    display:block;
+}
+
+header-inner section-inner{
+    max-width: 20%;
+    and height: auto;
+}
+
+td, th {
+    text-align: left;
+    font-family:sans-serif;
+    padding: 0 15px;
+}
